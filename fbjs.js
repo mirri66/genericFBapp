@@ -57,8 +57,7 @@ function getProfileImage() {
     FB.api("/me/picture?width=180&height=180",  function(response) {
       
         var profileImage = response.data.url.split('https://')[1]
-console.log('img url' + profileImage)     
-  photo.innerHTML='<img src=\"http://' + profileImage + '\">';
+        photo.innerHTML='<img src=\"http://' + profileImage + '\" width=\"100px\">';
     }); 
 }
 
